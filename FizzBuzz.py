@@ -8,8 +8,19 @@ def fizzbuzz(number):
     else:
         return str(number)
 
-
-
+def chatbot():
+    while True:
+        user_input = input("Enter a number (or 'quit' or 'q' to exit): ")
+        if user_input.lower() == "quit" or user_input.lower() == 'q':
+            break
+        try:
+            number = int(user_input)
+            result = fizzbuzz(number)
+        except ValueError:
+            print("Invalid input. Please enter a number:")
+        else:
+            print(result)
+            break
 chatbot()
 
    
