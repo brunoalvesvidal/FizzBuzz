@@ -20,6 +20,7 @@ def chatbot():
             print("Invalid input. Please enter a number:")
         else:
             print(result)
+            break
 chatbot()
 
    
